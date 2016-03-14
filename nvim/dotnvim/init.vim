@@ -1,23 +1,3 @@
-" Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
-"
-" This is the personal neovim configuration file of Renato Utsch.
-" It is largely based on Steve Francia's spf13 vim distribution and bling's
-" dotvim distribution.
-"
-" The objective with this dotnvim is to make a light but useful distribution
-" specifically for neovim. The settings and plugins I use in this
-" configuration are the ones I find most useful, and I avoided adding a lot of
-" plugins to keep everything fast and preferred neovim plugins when available.
-"
-" This file configures the core vanilla neovim and loads the plugs.vim file
-" with the plugins and their configuration.
-"
-" This project is released under the Apache 2 license.
-"
-" Find me at https://github.com/RenatoUtsch
-" }
-
 " dotnvim settings {
     if !exists('g:settings') || !exists('g:settings.version')
     echom 'The g:settings and g:settings.version variables must be defined. Please consult the README.md.'
@@ -31,9 +11,8 @@
     " Default Settings {
         let s:default_settings = {}
         let s:default_settings.default_indent = 4
-        let s:default_settings.max_column = 80
-        let s:default_settings.colorscheme = 'base16-default'
-        let s:default_settings.airline_colorscheme = 'base16_default'
+        let s:default_settings.colorscheme = 'hybrid'
+        let s:default_settings.airline_colorscheme = 'hybrid'
         let s:default_settings.cache_dir = '~/.config/nvim/.cache'
     " }
 
@@ -77,7 +56,6 @@
     " Add plugins to &runtimepath
     call plug#end()
 " }
-
 " General {
     set background=dark         " Assume dark background
     filetype plugin indent on   " Automatically detect file types.
@@ -136,9 +114,7 @@
     set tabpagemax=15                       " Only show 15 tabs
     set showmode                            " Display the current mode
     set cursorline                          " Highlight current line
-    let &colorcolumn=g:settings.max_column  " Highlight max_column
 
-    highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
 
     " Whitespace
@@ -146,7 +122,7 @@
     set number                      " Line numbers on
     set showmatch                   " Show matching brackets/parenthesis
     set incsearch                   " Find as you type search
-    set hlsearch                    " Highlight search terms
+    "set hlsearch                    " Highlight search terms
     set winminheight=0              " Windows can be 0 line high
     set ignorecase                  " Case insensitive search
     set smartcase                   " Case sensitive when uc present
