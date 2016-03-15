@@ -25,6 +25,9 @@ Plug 'scrooloose/syntastic'
 Plug 'lambdatoast/elm.vim'
 Plug 'elixir-lang/vim-elixir'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 " set leader key
@@ -41,7 +44,6 @@ set t_Co=256
 colorscheme hybrid
 syntax enable
 
-
-
-" stuff
-
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
