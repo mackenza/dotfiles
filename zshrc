@@ -49,7 +49,7 @@ ZSH_THEME="muse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git tmux)
 
 # User configuration
 
@@ -81,3 +81,6 @@ export JAVA_HOME=/usr/lib/jvm/default-runtime/bin
 export EDITOR="vim"
 alias tg="ssh ubuntu@teamgamer.com"
 alias ch="ssh ubuntu@condorshockey.org"
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
