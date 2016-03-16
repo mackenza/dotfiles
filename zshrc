@@ -81,3 +81,5 @@ export JAVA_HOME=/usr/lib/jvm/default-runtime/bin
 export EDITOR="vim"
 alias tg="ssh ubuntu@teamgamer.com"
 alias ch="ssh ubuntu@condorshockey.org"
+
+export TERM=xterm-256color
