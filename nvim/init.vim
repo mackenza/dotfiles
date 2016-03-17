@@ -28,6 +28,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'tmux-plugins/vim-tmux'
+
 call plug#end()
 
 " set leader key
@@ -41,9 +43,10 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 let g:solarized_termcolors=256
 set t_Co=256
-colorscheme hybrid
+colorscheme wombat
 syntax enable
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
