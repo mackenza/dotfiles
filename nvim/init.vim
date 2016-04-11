@@ -44,7 +44,7 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 let g:solarized_termcolors=256
 set t_Co=256
-colorscheme wombat
+colorscheme wombat256
 syntax enable
 set number
 
