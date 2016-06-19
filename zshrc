@@ -82,5 +82,6 @@ export EDITOR="vim"
 alias tg="ssh ubuntu@teamgamer.com"
 alias ch="ssh ubuntu@condorshockey.org"
 alias git=hub
+alias upgrade_aur="yaourt -Syu --devel --aur"
 
 export TERM=xterm-256color
