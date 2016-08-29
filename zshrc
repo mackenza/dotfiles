@@ -79,10 +79,7 @@ export GOPATH=/home/mackenza/go
 export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME=/usr/lib/jvm/default-runtime/bin
 export EDITOR="nvim"
-alias tg="ssh ubuntu@teamgamer.com"
-alias ch="ssh ubuntu@condorshockey.org"
 alias git=hub
-alias upgrade_aur="yaourt -Syu --devel --aur --noconfirm"
-
+alias vi=nvim
 
 export TERM=xterm-256color
