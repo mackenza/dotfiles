@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
 Plug 'sjl/gundo.vim'
 Plug 'flazz/vim-colorschemes'
 
@@ -21,15 +20,11 @@ Plug 'tpope/vim-unimpaired'
 
 " Syntax checking
 Plug 'scrooloose/syntastic'
-
-Plug 'lambdatoast/elm.vim'
-Plug 'elixir-lang/vim-elixir'
+Plug 'sheerun/vim-polyglot'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'tmux-plugins/vim-tmux'
-Plug 'kassio/neoterm'
 
 call plug#end()
 
