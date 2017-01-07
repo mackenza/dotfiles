@@ -78,8 +78,10 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export GOPATH=/home/mackenza/go
 export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME=/usr/lib/jvm/default-runtime/bin
+export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR="nvim"
 alias git=hub
 alias vi=nvim
+alias ls=exa
 
 export TERM=xterm-256color
