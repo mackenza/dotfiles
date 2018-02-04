@@ -21,6 +21,8 @@ Plug 'tpope/vim-unimpaired'
 " Syntax checking
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
+Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
